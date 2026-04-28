@@ -1,0 +1,90 @@
+{
+  "info": {
+    "name": "TOL - Estado de Cuenta API",
+    "_postman_id": "a1b2c3d4-e5f6-7890-aaaa-bbccddeeff00",
+    "description": "Colección para prueba técnica TOL - Consulta Estado de Cuenta",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Consultar Estado de Cuenta - OK",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/estado-cuenta?codigoCatastral=123&documento=999",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "estado-cuenta"
+          ],
+          "query": [
+            {
+              "key": "codigoCatastral",
+              "value": "123"
+            },
+            {
+              "key": "documento",
+              "value": "999"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Error - Campos vacíos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/estado-cuenta",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "estado-cuenta"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Error - Usuario no encontrado",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/estado-cuenta?codigoCatastral=000&documento=000",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "estado-cuenta"
+          ],
+          "query": [
+            {
+              "key": "codigoCatastral",
+              "value": "000"
+            },
+            {
+              "key": "documento",
+              "value": "000"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

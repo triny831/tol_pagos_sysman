@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="tol_pagos">
+    <output-path>$PROJECT_DIR$/out/artifacts/tol_pagos</output-path>
+    <root id="root">
+      <element id="archive" name="tol_pagos.jar">
+        <element id="module-output" name="tol_pagos" />
+      </element>
+    </root>
+  </artifact>
+</component>
